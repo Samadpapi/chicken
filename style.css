@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.topnav{
+    overflow: hidden;
+    background-color: #333333;
+    position: relative;
+}
+.topnav #myLinks{
+    display: none;
+    
+} 
+.topnav a{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-style: 17px;
+    display: block;
+}
+/* styling the harmburger menu */
+.topnav a.icon{
+    background: black;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* add gray background hover effect */
+.topnav a:hover{
+    background-color: #dddddd;
+    color: black;
+}
+/* hide topnav */
+.topnav{
+    display: none;
+}
+.Active{
+    background: #04aa6d;
+    color: white;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    padding: 14px 16px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:teal;
+    font-size: 18px;
+}
+nav{
+    background: #333333;
+}
+nav ul li:hover{
+    background:white;
+}
+nav ul li a:hover{
+    color: indianred;
+    border-bottom:  2px solid black;
+    
+}
+header{
+    height: 450px;
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("./IMG/IMG_2345.JPG");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+#news{
+    height: 400px;
+    background: lightgray;
+    padding: 50px;
+
+}
+#news h1{
+    margin: 15px 0;
+}
+#news p{
+    margin-bottom: 15px;
+    color: #808080;
+}
+#about{
+    height: 400px;
+    padding: 60px;
+
+}
+#about h1{
+    margin: 15px;
+    color: #606060;
+}
+#about p{
+    color: #808080;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+#about h3{
+    color: #606060;
+}
+#contact{
+    height: 400px;
+    background: lightgray;
+    padding: 60px;
+}
+#contact h1{
+    margin: 15px;
+}
+#contact p{
+    margin-bottom: 10px;
+    color: #808080;
+    line-height: 1.4;
+}
+#contact h3 h2{
+    color: #606060;
+    margin: 10px 0;
+}
+#services{
+    height: 400px;
+    padding: 60px;
+}
+#services h1{
+    margin: 15px;
+    color: #606060
+}
+#services p{
+    color: #808080;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    
+}
+#services h3{
+    color: #606060;
+}
+.social a{
+    text-decoration: none;
+}
+.social .fa-whatsapp{
+    margin-right: 20px;
+    color: #25d366;
+    font-size: 20px;
+}
+.social .fa-facebook{
+    margin-right: 20px;
+    color: #4267b2;
+    font-size: 20px;
+
+}
+.social .fa-instagram{
+margin-right: 20px;
+color: #e1306c;
+font-size: 20px;
+}
+.social .fa-youtube{
+    margin-right: 20px;
+    color: #ff0000;
+    font-size: 20px;
+
+}
+.column{
+    height: 700px;
+    display: flex;
+    
+}
+.col1{
+    width: 33.3%;
+    background: url("./IMG/IMG_2338.JPG");
+    padding: 10px;
+    height: 250px;
+}
+.col2{
+    width: 33.3%;
+    background: url("./IMG/IMG_2341.JPG");
+    padding: 10px;
+    height: 250px;
+}
+.col3{
+    width: 33.3%;
+    background: url("./IMG/IMG_2340.JPG");
+    padding: 10px;
+    height: 250px;
+}
+.col1:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.col2:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.col3:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+/* Media screen size */
+@media screen and (max-width:600px){
+.topnav{
+    display: block;
+}
+nav{
+    display: none;
+}
+header p{
+    text-align: center;
+    margin-top: 10px;
+}
+#about{
+    padding: 20px;
+    height: 450px;
+}
+#contact{
+padding: 20px;
+height: 700px;
+}
+.column{
+    height: 900px;
+    flex-direction: column;
+}
+.col1{
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+.col2{
+    width: 100%;
+    margin-bottom: 5px; 
+    padding: 20px;
+}
+.col3{
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+}
